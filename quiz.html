@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Accessibility Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Building Better Web Experiences</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="what-is-accessibility.html">What Is It?</a></li>
+                <li><a href="techniques.html">Techniques</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Quiz: Test Your Accessibility Knowledge</h2>
+        <form id="quizForm">
+            <!-- Question 1: Fill in the blank -->
+            <div class="question">
+                <label for="q1">
+                    1. What HTML attribute is used to describe an image for screen readers?
+                </label><br>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+
+            <!-- Question 2: Multiple correct choices -->
+            <div class="question">
+                <p>2. Which of the following are accessibility best practices? (Choose all that apply)</p>
+                <label><input type="checkbox" name="q2" value="headings"> Use proper heading levels (H1, H2, etc.)</label><br>
+                <label><input type="checkbox" name="q2" value="no-forms"> Avoid using any form fields</label><br>
+                <label><input type="checkbox" name="q2" value="alt-text"> Provide text descriptions for images</label><br>
+                <label><input type="checkbox" name="q2" value="animations"> Only use animations instead of text</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p>3. What does “WCAG” stand for in web accessibility?</p>
+                <label><input type="radio" name="q3" value="wrong1"> Web Coding Accessibility Guide</label><br>
+                <label><input type="radio" name="q3" value="wrong2"> World Committee for Accessible Graphics</label><br>
+                <label><input type="radio" name="q3" value="correct"> Web Content Accessibility Guidelines</label><br>
+                <label><input type="radio" name="q3" value="wrong3"> Website Compliance and Accessibility Guide</label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <p>4. Which of these is an example of poor accessibility?</p>
+                <label><input type="radio" name="q4" value="wrong1"> A website that uses large, high-contrast fonts</label><br>
+                <label><input type="radio" name="q4" value="wrong2"> A site that allows keyboard navigation</label><br>
+                <label><input type="radio" name="q4" value="correct"> A page with light gray text on a white background</label><br>
+                <label><input type="radio" name="q4" value="wrong3"> A form with clear labels for each field</label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p>5. Who benefits from web accessibility features?</p>
+                <label><input type="radio" name="q5" value="wrong1"> Only people with vision problems</label><br>
+                <label><input type="radio" name="q5" value="wrong2"> Only screen reader users</label><br>
+                <label><input type="radio" name="q5" value="correct"> Everyone, including users with or without disabilities</label><br>
+                <label><input type="radio" name="q5" value="wrong3"> Just developers and designers</label>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <p>6. What tag is typically used for main headings on a web page?</p>
+                <label><input type="radio" name="q6" value="correct"> &lt;h1&gt;</label><br>
+                <label><input type="radio" name="q6" value="wrong1"> &lt;p&gt;</label><br>
+                <label><input type="radio" name="q6" value="wrong2"> &lt;div&gt;</label><br>
+                <label><input type="radio" name="q6" value="wrong3"> &lt;main&gt;</label>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+
+        <div id="results" style="display:none;">
+            <h3>Quiz Results</h3>
+            <p id="score"></p>
+            <p id="answers"></p>
+            <p id="result"></p>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created for IT 3203 – Milestone 3 Project</p>
+    </footer>
+</body>
+</html>

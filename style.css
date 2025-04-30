@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f6;
+    color: #333;
+}
+
+header {
+    background-color: #ff69b4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 10px 0 0 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #1e90ff;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #ffe6f0;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    color: #555;
+}
+
+h2 {
+    color: #ff69b4;
+}
+
+.content-with-image {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.content-with-image .text {
+    flex: 1 1 300px;
+}
+
+.content-with-image .image {
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.content-with-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    background-color: #ffe0f0;
+    border-left: 6px solid #ff69b4;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+input[type="text"], button {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0d6efd;
+}
+
+#results {
+    background-color: #fef6fb;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px dashed #ff69b4;
+}
+
+.welcome-banner {
+    background-color: #ffe6f0;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-with-image {
+        flex-direction: column;
+    }
+}
